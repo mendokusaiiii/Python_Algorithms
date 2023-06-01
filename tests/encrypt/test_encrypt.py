@@ -18,5 +18,3 @@ def test_encrypt_message():
 
     result_key_even = encrypt_message("technology", 6)
     assert result_key_even == "ygol_onhcet"
-
-# comentario para poder fazer o commit
