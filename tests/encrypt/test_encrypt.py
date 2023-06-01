@@ -4,7 +4,7 @@ import pytest
 
 def test_encrypt_message():
     with pytest.raises(TypeError) as type_error_message:
-        encrypt_message(0,1)
+        encrypt_message(0, 1)
     assert str(type_error_message.value) == "tipo inválido para message"
     with pytest.raises(TypeError) as type_error_key:
         encrypt_message("string", "a")
@@ -18,3 +18,5 @@ def test_encrypt_message():
 
     result_key_even = encrypt_message("technology", 6)
     assert result_key_even == "ygol_onhcet"
+
+# comentario para poder fazer o commit
